@@ -6,9 +6,7 @@ Prerequisites:
 
 To build & run:
 
-  docker-compose build
-  docker-compose up
+    docker-compose build
+    docker-compose up
 
-Then the website is available at:
-
-  http://0.0.0.0
+Then the website is available at http://0.0.0.0
