@@ -1,0 +1,16 @@
+version: '2'
+services:
+  flask:
+    restart: always
+    build: flask
+    expose:
+      - "8000"
+    volumes:
+      - .:/opt/www
+  nginx:
+    restart: always
+    build: nginx
+    ports:
+      - "80:80"
+    links:
+      - flask:flask
